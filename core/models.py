@@ -19,7 +19,7 @@ class BaseModel(models.Model):
     deleted_at = models.DateTimeField(
         null=True,
         blank=True,
-        help_text="Registros com este campo preenchido são considerados excluídos logicamente.",
+        help_text="Records with this field filled in are considered logically deleted.",
     )
 
     class Meta:
